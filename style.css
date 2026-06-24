@@ -1,0 +1,310 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(17,24,39,0.95);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,0.3);
+}
+
+nav h2{
+    color:#38bdf8;
+    font-size:1.8rem;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:1.1rem;
+    max-width:650px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    background:#38bdf8;
+    color:#0f172a;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(56,189,248,0.4);
+}
+
+/* SECTIONS */
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+/* ABOUT */
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#d1d5db;
+}
+
+/* SKILLS */
+
+.skill-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill-box span{
+    background:#1e293b;
+    padding:12px 22px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.skill-box span:hover{
+    background:#38bdf8;
+    color:#0f172a;
+    transform:translateY(-3px);
+}
+
+/* PROJECTS */
+
+.project-card{
+    background:#1e293b;
+    margin-top:30px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.25);
+}
+
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.project-card p{
+    color:#d1d5db;
+}
+
+.project-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.project-gallery img{
+    width:280px;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.project-gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* INTERNSHIPS */
+
+.internship{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+.internship h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+/* CERTIFICATES */
+
+.certificate-section{
+    margin-top:40px;
+}
+
+.certificate-section h3{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.certificate-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.certificate-gallery img{
+    width:320px;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    border:2px solid rgba(255,255,255,0.08);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.certificate-gallery img:hover{
+    transform:scale(1.05);
+    border-color:#38bdf8;
+}
+
+/* CONTACT */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:15px 0;
+}
+
+#contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111827;
+    margin-top:50px;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero h3{
+        font-size:1.1rem;
+    }
+
+    section{
+        padding:60px 6%;
+    }
+
+    .project-gallery img,
+    .certificate-gallery img{
+        width:100%;
+        height:auto;
+    }
+}
